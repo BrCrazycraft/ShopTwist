@@ -6,12 +6,15 @@
 }
 
 header {
-    display: flex;
+    display: inline-flex;
     background-color: #00000080;
+    width: 100%;
+    justify-content: space-between;
 
     .cabeca {
         color: white;
-        margin: 0px 50px;
+        text-shadow: 3px 3px 3px black;
+        margin-left: 20px;
 
         .cabeca-logo {
             width: 100%;
@@ -23,5 +26,245 @@ header {
                 margin: auto;
             }
         }
+    }
+
+    nav {
+        display: flex;
+        align-items: flex-end;
+
+
+        .pesquisar {
+            background-color: #00000080;
+            padding: 5px;
+            border-radius: 2px;
+            
+            input {
+                height: 2em;
+            }
+
+            button {
+                height: 2em;
+                width: 5em;
+            }
+        }
+
+        .barra {
+            .material-symbols-outlined {
+                font-size: 2.5em;
+                color: white;
+                text-shadow: 3px 3px 3px black;
+            }
+
+            ul {
+                position: absolute;
+                background-color: black;
+                padding: 10px;
+                li {
+                    list-style-type: none;
+                    margin: 5px 0px;
+                    a {
+                        font-size: 1.1em;
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+main {
+    background-color: #00000020;
+    max-width: 800px;
+    margin: auto;
+
+    h1 {
+        text-align: center;
+        color: white;
+        margin: 15px;
+        text-shadow: 2px 2px 2px black;
+    }
+
+    .destaque {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #00000020;
+
+        .produto-destacado {
+            display: flex;
+            background-color: black;
+            align-items: center;
+            width: 100%;
+            color: white;
+            margin: 10px 0px;
+            padding: 5px;
+
+
+            .produto-destacado-img {
+                max-width: 128px;
+                max-height: 128px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .produto-destacado-conteudo {
+                background-color: #ffffff9a;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin-left: 15px;
+                padding: 5px;
+                text-decoration: 2px 2px 2px black;
+
+                h3 {
+                    text-align: center;
+                }
+
+                h4 {
+                    text-align: center;
+                    background-color: black;
+                    font-size: 1.1em;
+                }
+
+                a {
+                    text-align: center;
+                    text-decoration: none;
+                    background-color: black;
+                    padding: 5px;
+                    color: white;
+                    transition: 0.5s;
+                }
+
+                a:hover {
+                    background-color: #ffffff51;
+                }
+            }
+        }
+    }
+
+    .categorias {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+
+        .categoria {
+            display: flex;
+            align-items: center;
+            margin: auto;
+            height: 150px;
+            width: 150px;
+            border: 5px solid black;
+            border-radius: 5px;
+            margin: 5px;
+
+            a {
+                margin: auto;
+                text-decoration: none;
+                padding: 10px;
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+
+
+    .sobre-nos {
+        background-color: #00000080;
+        padding: 15px 0px;
+
+        .sobre-nos-pergunta {
+            text-align: center;
+            color: black;
+            margin: 5px 0px;
+
+            button {
+                font-family: Arial, Helvetica, sans-serif;
+                width: 100%;
+                font-size: 1.15em;
+                transition: 0.5s;
+            }
+
+            button:hover {
+                background-color: #ffffffb4;
+            } 
+
+            p {
+                background-color: #ffffffc4;
+            }
+        }
+    }
+}
+
+
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+
+    a {
+        color: white;
+    }
+}
+
+
+.esconder {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.1s ease-out;
+}
+
+.aparecer {
+    max-height: 1000px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in;
+}
+
+
+
+@media (min-width: 800px) {
+    header {
+        .cabeca {
+            display: flex;
+            align-items: center;
+
+            .cabeca-logo img {
+                height: 128px;
+                width: 128px;
+            }
+
+            h1 {
+                font-size: 6em;
+            }
+        }
+
+        .barra {
+            span {
+                display: none;
+            }
+            
+            ul {
+                position: inherit;
+                display: block;
+            }
+        }
+        
+        .pesquisar {
+            input {
+                width: 256px;
+            }
+        }
+    }
+
+    main {
+        padding: 25px;
+
+
     }
 }
