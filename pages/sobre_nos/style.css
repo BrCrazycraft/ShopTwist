@@ -1,0 +1,235 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+:root {
+    --corPrincipal: #2433D8;
+    --corEscura1: #0051DB;
+    --corEscura2: #6548DB;
+    --corClaro1: #0090DB;
+    --corClaro2: #9746DB;
+    --corSuavizar1: #5990f050;
+    --corSuavizar2: #0050db56;
+    --corSuavizar3: #6548db20;
+    --Bg1: #6548db20;
+    --Bg2: #008edb20;
+    --Lay1: #11165540;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+* {
+    font-family: "Raleway";
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.logo-icon-container {
+    font-size: 3em;
+}
+
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #FFF;
+    height: 6em;
+    padding: 1em;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu > li {
+    margin: 0 1rem;
+    overflow: hidden;
+
+    a {
+        user-select: none;
+        background-color: #00000060;
+        color: white;
+        text-decoration: none;
+        padding: 5px;
+    }
+}
+
+.menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    user-select: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-toggle {
+    user-select: none;
+    display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+}
+
+.menu-button::before {
+    content: '';
+    margin-top: -8px;
+}
+
+.menu-button::after {
+    content: '';
+    margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+}
+
+
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    background-image: linear-gradient(var(--Bg2), var(--Bg1));
+    margin: auto;
+
+    h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .normal {
+        padding: 0px 20px;
+    }
+
+    .destaque {
+        padding: 0px 20px;
+        background-color: var(--corSuavizar1);
+    }
+
+    .links {
+        display: flex;
+        margin: 25px 10px;
+        flex-direction: column;
+        background-color: var(--corEscura2);
+        h3 {
+            color: white;
+            text-align: center;
+        }
+
+        a {
+            font-size: 1.1em;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            margin: 5px;
+            background-color: var(--corClaro1);
+        }
+
+        a:hover {
+            background-color: var(--corClaro2);
+        }
+    }
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+
+    a {
+        color: white;
+    }
+
+}
+
+
+
+
+/* Media Query */
+@media (max-width: 1000px) {
+    .menu-button-container {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        margin-top: 50px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu-toggle ~ .menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    #menu-toggle:checked ~ .menu li {
+        border: 1px solid #333;
+        height: 2.5em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .menu > li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: white;
+        background-color: #222;
+    }
+
+    .menu > li:not(:last-child) {
+        border-bottom: 1px solid #444;
+    }
+
+    main {
+        .normal {
+            margin: 0px 25px;
+        }
+        
+        .destaque {
+            padding: 0px 25px;
+        }
+    }
+}

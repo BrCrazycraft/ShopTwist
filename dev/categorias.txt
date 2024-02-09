@@ -1,0 +1,71 @@
+Produtos Fisicos
+    [Eletronicos]
+        Eletronicos
+        Acessorios Eletronicos
+        Smarthphone
+        Notebooks
+        Computador
+        Tablet
+        Segurança
+
+
+    [Beleza]
+        Beleza
+        Roupas
+        Acessorios de Roupas
+        Roupas Maculinas
+        Roupas Femininas
+        Calçados
+        Fantasias
+
+
+    [Itens Pessoais]
+        Bagagens
+        Esportes
+
+
+    [Casa]
+        Acessorios de Casa
+        Animais
+        Ferramentas
+        Itens de Casa
+        Itens Automotivos
+        Eletrodomestico
+
+
+
+Produtos Digitais
+    [Pessoais]
+        Saude e Esporte
+        Relacionamento
+        Sexualidade
+        Moda
+        Hobbies
+        Espiritualidade
+        Musica
+        Desenvolvimento Pessoal
+
+    [Educação]
+        Idiomas
+        Direito
+        Leitura
+        TI
+        Design
+        Educacional
+
+    [Dinheiro]
+        Finanças e Investimentos
+        Negocios
+        Entretenimento
+        Internet
+        Empreendedorismo Digital
+    
+    [Casa]
+        Pet e Planta
+        Construção
+        Meio Ambiente
+        Culinaria
+
+    [Outros]
+        Apps
+        Outros

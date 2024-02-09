@@ -1,0 +1,176 @@
+        "categorias-acessorio", "categorias-vestuario", 
+
+                    <div class="Gaveta">
+                <div class="Gaveta-Master">
+                    <div class="Imagem-Gaveta">
+                        <img src="../../recursos/categorias/oti-vestuario.jpg" alt="magens com varios produtos de Vestuário">
+                        <button type="button" onclick="gaveta_switch('categorias-vestuario')">Seu Vestuário</button>
+                    </div>
+                    <div class="Imagem-Produto">
+                        <h3>Produtos</h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <!-- Conteudo -->
+                <div class="Gaveta-Conteudo" id="categorias-vestuario">
+                    <div class="Categoria">
+                        <div class="Imagem-Categoria">
+                            <img src="" alt="">
+                        </div>
+                        <a href="">Produtos de Beleza</a>
+                    </div>
+                    <div class="Categoria">
+                        <div class="Imagem-Categoria">
+                            <img src="" alt="">
+                        </div>
+                        <a href="">Vestuário Masculino</a>
+                    </div>
+                    <div class="Categoria">
+                        <div class="Imagem-Categoria">
+                            <img src="" alt="">
+                        </div>
+                        <a href="">Vestuário Feminino</a>
+                    </div>
+                    <div class="Categoria">
+                        <div class="Imagem-Categoria">
+                            <img src="" alt="">
+                        </div>
+                        <a href="">Calçados</a>
+                    </div>
+                    <div class="Categoria">
+                        <div class="Imagem-Categoria">
+                            <img src="" alt="">
+                        </div>
+                        <a href="">Fantasia</a>
+                    </div>
+                    <div class="Categoria">
+                        <div class="Imagem-Categoria">
+                            <img src="" alt="">
+                        </div>
+                        <a href="">Acessórios de Moda</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Gaveta">
+                <div class="Gaveta-Master">
+                    <div class="Imagem-Gaveta">
+                        <img src="../../recursos/categorias/oti-paravoce.jpg" alt="magens com varios Acessórios para Você">
+                        <button type="button" onclick="gaveta_switch('categorias-acessorio')">Acessórios para você</button>
+                    </div>
+
+                </div>
+
+                <!-- Conteudo -->
+                <div class="Gaveta-Conteudo" id="categorias-acessorio">
+                    <div class="Categoria">
+                        <div class="Imagem-Categoria">
+                            <img src="" alt="">
+                        </div>
+                        <a href="">Bagagens</a>
+                    </div>
+                    <div class="Categoria">
+                        <div class="Imagem-Categoria">
+                            <img src="" alt="">
+                        </div>
+                        <a href="">Equipamentos Esportivos</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="Categoria">
+                <div class="Imagem-Categoria">
+                    <img src="" alt="">
+                </div>
+                <a href="">Tablet</a>
+            </div>
+
+            <div class="Categoria">
+                <div class="Imagem-Categoria">
+                    <img src="" alt="">
+                </div>
+                <a href="">Eletromésticos</a>
+            </div>
+            <div class="Categoria">
+                <div class="Imagem-Categoria">
+                    <img src="" alt="">
+                </div>
+                <a href="">Sistemas de Segurança</a>
+            </div>
+
+            <div class="Categoria">
+                <div class="Imagem-Categoria">
+                    <img src="" alt="">
+                </div>
+                <a href="">SmarthWatch</a>
+            </div>
+
+
+
+
+
+
+            <div class="Categoria">
+                <div class="Imagem-Categoria">
+                    <img src="" alt="">
+                </div>
+                <a href="">Sexualidade</a>
+            </div>
+            <div class="Categoria">
+                <div class="Imagem-Categoria">
+                    <img src="" alt="">
+                </div>
+                <a href="">Moda</a>
+            </div>
+
+
+            <div class="Categoria">
+                <div class="Imagem-Categoria">
+                    <img src="" alt="">
+                </div>
+                <a href="">Hobbies</a>
+            </div>
+            <div class="Categoria">
+                <div class="Imagem-Categoria">
+                    <img src="" alt="">
+                </div>
+                <a href="">Música</a>
+            </div>
+
+
+            <div class="Categoria">
+                <div class="Imagem-Categoria">
+                    <img src="" alt="">
+                </div>
+                <a href="">Direito</a>
+            </div>
+            <div class="Categoria">
+                <div class="Imagem-Categoria">
+                    <img src="" alt="">
+                </div>
+                <a href="">Leitura</a>
+            </div>
+            <div class="Categoria">
+                <div class="Imagem-Categoria">
+                    <img src="" alt="">
+                </div>
+                <a href="">Educação</a>
+            </div>
+
+
+
+            <div class="Categoria">
+                <div class="Imagem-Categoria">
+                    <img src="" alt="">
+                </div>
+                <a href="">Entretenimento</a>
+            </div>
+            <div class="Categoria">
+                <div class="Imagem-Categoria">
+                    <img src="" alt="">
+                </div>
+                <a href="">Desing</a>
+            </div>

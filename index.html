@@ -9,8 +9,8 @@
 
     <!-- Recursos -->
 
+    
     <!-- Indica que este script é um módulo ES6 -->
-    <link rel="stylesheet" href="style.css">
     <script src="base.js"></script>
 
 
@@ -49,39 +49,29 @@
 
     <!-- Import -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-
 </head>
 <body>
-    <header>
-        <div class="cabeca">
-            <div class="cabeca-logo">
-                <img src="recursos/base/logo.png" alt="Logo">
-            </div>
-            <h1>Twist</h1>
+    <header class="top-nav">
+        <div class="logo-icon-container">
+            Twist
         </div>
-
-        <nav>
-            <div class="barra">
-                <span class="material-symbols-outlined" onclick="menu()">menu</span>
-                <ul id="barra-lista" class="barra-android">
-                    <li><a href="#">Conteudo 1</a></li>
-                    <li><a href="#">Conteudo 2</a></li>
-                </ul>
-                <ul class="barra-windows">
-                    <li><a href="#">Conteudo 1</a></li>
-                    <li><a href="#">Conteudo 2</a></li>
-                </ul>
-            </div>
-            <div class="pesquisar">
-                <input type="text" placeholder="Pesquisar..." id="pesquisar-text">
-                <button type="submit" onclick="pesquisar()" id="pesquisar-btn">Buscar</button>
-            </div>
-        </nav>
-
-        
+        <input id="menu-toggle" type="checkbox" />
+        <div class="search-bar">
+            <input type="text" id="search" class="search-input" placeholder="Pesquisar">
+            <label for="search" style="color: white;">
+                <input type="button" value="Pesquisar">
+            </label>
+        </div>
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+            <li><a href="">Home</a></li>
+            <li><a href="pages/categorias/categorias_base.html">Categorias</a></li>
+            <li><a href="pages/afiliados/afiliado.html">Afiliação</a></li>
+            <li><a href="pages/sobre_nos/sobrenos.html">Sobre Nós</a></li>
+        </ul>
     </header>
-
-
 
     <main>
         <h1>Produtos em Destaque</h1>
@@ -157,19 +147,19 @@
         <h1>Categorias</h1>
         <section class="categorias">
             <div class="categoria" id="categoria-slot1">
-                <a href="#">Botao</a>
+                <a href="#">Eletrônico</a>
             </div>
 
             <div class="categoria" id="categoria-slot2">
-                <a href="#">Botao</a>
+                <a href="#">Casa</a>
             </div>
 
             <div class="categoria" id="categoria-slot3">
-                <a href="#">Botao</a>
+                <a href="#">Finanças</a>
             </div>
 
             <div class="categoria" id="categoria-slot4">
-                <a href="#">Botao</a>
+                <a href="#">Negócios</a>
             </div>
         </section>
 
@@ -196,5 +186,7 @@
     <footer>
         <a href="#">Entre em Contato</a>
     </footer>
+
 </body>
 </html>
+

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twist - Categorias</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../../recursos/base/icon.ico" type="image/x-icon">
+
+    <!-- Recursos -->
+
+    
+    <!-- Indica que este script é um módulo ES6 -->
+    <script src="base.js"></script>
+
+
+    <meta name="description" content="Descrição do seu site">
+    <meta name="keywords" content="palavra-chave1, palavra-chave2, ...">
+    <link rel="canonical" href="URL-canônica-do-seu-site">
+    <meta name="robots" content="index, nofollow">
+    <meta name="author" content="ONIGASHIMA">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="caminho/do/seu/apple-touch-icon.png">
+
+</head>
+<body onload="inicio()">
+    <header class="top-nav">
+        <div class="logo-icon-container">
+            Twist
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <div class="search-bar">
+            <input type="text" id="search" class="search-input" placeholder="Pesquisar">
+            <label for="search" style="color: white;">
+                <input type="button" value="Pesquisar">
+            </label>
+        </div>
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="">Categorias</a></li>
+            <li><a href="../afiliados/afiliado.html">Afiliação</a></li>
+            <li><a href="../sobre_nos/sobrenos.html">Sobre Nós</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <h2>Categorias em Destaque</h2>
+        <section class="Principais">
+            <div class="Categoria">
+                <div class="Imagem-Categoria">
+                    <img src="../../recursos/categorias/oti-eletronico.jpg" alt="Imagens com varios produtos eletrônicos">
+                </div>
+                <a href="">Eletrônicos</a>
+            </div>
+
+            <div class="Categoria">
+                <div class="Imagem-Categoria">
+                    <img src="../../recursos/categorias/oti-vestuario.jpg" alt="magens com varios produtos de Vestuário">
+                </div>
+                <a href="">Roupas</a>
+            </div>
+
+            <div class="Categoria">
+                <div class="Imagem-Categoria">
+                    <img src="../../recursos/categorias/oti-suacasa.jpg" alt="magens com varios produtos para sua Casa">
+                </div>
+                <a href="">Casa</a>
+            </div>
+        </section>
+
+        <h2>Produtos Fisicos</h2>
+
+        <section class="Arvore">
+            <div class="Gaveta">
+                <div class="Gaveta-Master">
+                    <div class="Imagem-Gaveta">
+                        <img onclick="gaveta_switch('categorias-eletronico')" src="../../recursos/categorias/oti-eletronico.jpg" alt="magens com varios produtos eletrônicos">
+                        <button type="button" onclick="gaveta_switch('categorias-eletronico')">Eletrônicos</button>
+                    </div>
+                    <div class="Imagem-Produto">
+                        <h3>Descrição</h3>
+                        <p>
+                            Essa seção engloba uma ampla variedade de produtos eletrônicos, incluindo smartphones, notebooks e computadores. Aqui, você encontrará desde itens essenciais, como carregadores portáteis, até dispositivos indispensáveis, como celulares de última geração e muito mais. Explore nossa seleção para descobrir os produtos que atendem às suas necessidades tecnológicas e estilo de vida.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- Conteudo -->
+                <div class="Gaveta-Conteudo" id="categorias-eletronico">
+                    <div class="Categoria">
+                        <div class="Imagem-Categoria">
+                            <img src="../../recursos/categorias/sub-eletronico.jpg" alt="Categoria de Acessórios Eletrônicos">
+                        </div>
+                        <a href="">Eletrônicos</a>
+                    </div>
+                    <div class="Categoria">
+                        <div class="Imagem-Categoria">
+                            <img src="../../recursos/categorias/sub-celulares.jpg" alt="Categoria de Celulares">
+                        </div>
+                        <a href="">Dispositivos Móveis</a>
+                    </div>
+                    <div class="Categoria">
+                        <div class="Imagem-Categoria">
+                            <img src="../../recursos/categorias/sub-notebooks.jpg" alt="">
+                        </div>
+                        <a href="">Notebook</a>
+                    </div>
+                    <div class="Categoria">
+                        <div class="Imagem-Categoria">
+                            <img src="../../recursos/categorias/sub-computadores.jpg" alt="">
+                        </div>
+                        <a href="">Computador e Informática</a>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="Gaveta">
+                <div class="Gaveta-Master">
+                    <div class="Imagem-Gaveta">
+                        <img onclick="gaveta_switch('categorias-casa')" src="../../recursos/categorias/oti-suacasa.jpg" alt="magens com varios produtos para sua casa">
+                        <button type="button" onclick="gaveta_switch('categorias-casa')">Produtos para a sua Casa</button>
+                    </div>
+                    <div class="Imagem-Produto">
+                        <h3>Descrição</h3>
+                        <p>
+                            "Esta seção oferece uma ampla gama de acessórios para casa, itens para animais de estimação, ferramentas e mobiliário. Aqui, você encontrará desde produtos essenciais, como cortadores de alimentos, até itens indispensáveis, como martelos e muito mais. Explore nossa variedade de produtos para encontrar o que precisa para tornar sua casa mais funcional, cuidar dos seus animais de estimação e realizar projetos de melhoria doméstica.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Conteudo -->
+                <div class="Gaveta-Conteudo" id="categorias-casa">
+                    <div class="Categoria">
+                        <div class="Imagem-Categoria">
+                            <img src="../../recursos/categorias/sub-casa.jpg" alt="Categorias para Acessórios de Casa">
+                        </div>
+                        <a href="">Acessórios para casa</a>
+                    </div>
+                    <div class="Categoria">
+                        <div class="Imagem-Categoria">
+                            <img src="../../recursos/categorias/sub-pets.jpg" alt="Categorias para produtos pets">
+                        </div>
+                        <a href="">Produtos para animais</a>
+                    </div>
+                    <div class="Categoria">
+                        <div class="Imagem-Categoria">
+                            <img src="../../recursos/categorias/sub-ferramenta.jpg" alt="Categorias de Ferramentas">
+                        </div>
+                        <a href="">Ferramentas</a>
+                    </div>
+                    <div class="Categoria">
+                        <div class="Imagem-Categoria">
+                            <img src="../../recursos/categorias/sub-mobilia.jpg" alt="Categorias de Mobília">
+                        </div>
+                        <a href="">Mobília</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h2>Produtos Digitais</h2>
+
+        <section class="Arvore">            
+            <div class="Gaveta">
+                <div class="Gaveta-Master">
+                    <div class="Imagem-Gaveta">
+                        <img onclick="gaveta_switch('e-categoria-pessoais')" src="../../recursos/categorias/eti-desenvolvimento.jpg" alt="Ebooks e cursos para Desenvolvimento pessoal">
+                        <button type="button" onclick="gaveta_switch('e-categoria-pessoais')">Desenvolvimento Pessoal</button>
+                    </div>
+                    <div class="Imagem-Produto">
+                        <h3>Descrição</h3>
+                        <p>
+                            Essa seção engloba uma ampla variedade de produtos eletrônicos, incluindo smartphones, notebooks e computadores. Aqui, você encontrará desde itens essenciais, como carregadores portáteis, até dispositivos indispensáveis, como celulares de última geração e muito mais. Explore nossa seleção para descobrir os produtos que atendem às suas necessidades tecnológicas e estilo de vida.
+                        </p>
+                    </div>
+
+                </div>
+                <!-- Conteudo -->
+                <div class="Gaveta-Conteudo" id="e-categoria-pessoais">
+                    <div class="Categoria">
+                        <div class="Imagem-Categoria">
+                            <img src="../../recursos/categorias/eub-saude.jpg" alt="Produtos Digitais para Saúde e Bem-Estar">
+                        </div>
+                        <a href="">Saúde e Bem-Estar</a>
+                    </div>
+                    <div class="Categoria">
+                        <div class="Imagem-Categoria">
+                            <img src="../../recursos/categorias/eub-relacionamento.jpg" alt="Produtos Digitais para Saúde e Bem-Estar">
+                        </div>
+                        <a href="">Relacionamentos</a>
+                    </div>
+                    <div class="Categoria">
+                        <div class="Imagem-Categoria">
+                            <img src="../../recursos/categorias/eub-espiritualidade.jpg" alt="Produtos Digitais para Espiritualidade">
+                        </div>
+                        <a href="">Espiritualidade</a>
+                    </div>
+                    <div class="Categoria">
+                        <div class="Imagem-Categoria">
+                            <img src="../../recursos/categorias/eub-desenvolvimento.jpg" alt="Produtos Digitais para Desenvolvimento Pessoal">
+                        </div>
+                        <a href="">Desenvolvimento Pessoal</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Gaveta">
+                <div class="Gaveta-Master">
+                    <div class="Imagem-Gaveta">
+                        <img onclick="gaveta_switch('e-categoria-conhecimento')" src="../../recursos/categorias/eti-conhecimento.jpg" alt="Ebooks e Cursos para Conhecimentos Pessoal">
+                        <button type="button" onclick="gaveta_switch('e-categoria-conhecimento')">Conhecimentos para Você</button>
+                    </div>
+                    <div class="Imagem-Produto">
+                        <h3>Descrição</h3>
+                        <p>
+                            Esta seção abrange uma variedade de produtos digitais voltados para o desenvolvimento de conhecimentos, incluindo idiomas, tecnologia da informação (TI) e habilidades que podem enriquecer o seu currículo. Aqui, você encontrará desde cursos de idiomas e tutoriais de TI até materiais educativos projetados para aprimorar suas habilidades profissionais e ampliar suas oportunidades de carreira.
+                        </p>
+                    </div>
+
+                </div>
+                <!-- Conteudo -->
+                <div class="Gaveta-Conteudo" id="e-categoria-conhecimento">
+                    <div class="Categoria">
+                        <div class="Imagem-Categoria">
+                            <img src="../../recursos/categorias/eub-idiomas.jpg" alt="Produtos Digitais para Aprender Idiomas">
+                        </div>
+                        <a href="">Idiomas</a>
+                    </div>
+
+                    <div class="Categoria">
+                        <div class="Imagem-Categoria">
+                            <img src="../../recursos/categorias/eub-ti.jpg" alt="Produtos Digitais sobre Tecnologia da Informção (TI)">
+                        </div>
+                        <a href="">Tecnologia da Informção</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="Gaveta">
+                <div class="Gaveta-Master">
+                    <div class="Imagem-Gaveta">
+                        <img onclick="gaveta_switch('e-categoria-dinheiro')" src="../../recursos/categorias/eti-dinheiro.jpg" alt="Produtos e Ebooks para lucrar na Internet">
+                        <button type="button" onclick="gaveta_switch('e-categoria-dinheiro')">Para o seu Dinheiro</button>
+                    </div>
+                                        <div class="Imagem-Produto">
+                        <h3>Descrição</h3>
+                        <p>
+                            Esta seção abrange uma variedade de produtos destinados a auxiliá-lo em questões monetárias, negócios, investimentos, Internet e empreendedorismo digital. Aqui, você encontrará desde ferramentas financeiras para gerenciar suas finanças pessoais e empresariais até recursos para aprimorar suas habilidades de investimento e empreendedorismo online.
+                        </p>
+                    </div>
+                    
+                </div>
+                <!-- Conteudo -->
+                <div class="Gaveta-Conteudo"  id="e-categoria-dinheiro">
+                    <div class="Categoria">
+                        <div class="Imagem-Categoria">
+                            <img src="../../recursos/categorias/eub-financas.jpg
+                            " alt="Produtos Digitais sobre Finanças e Investimentos">
+                        </div>
+                        <a href="">Finanças e Investimentos</a>
+                    </div>
+                    <div class="Categoria">
+                        <div class="Imagem-Categoria">
+                            <img src="../../recursos/categorias/eub-negocios.jpg" alt="Produtos Digitais sobre Negócios">
+                        </div>
+                        <a href="">Negócios</a>
+                    </div>
+                    <div class="Categoria">
+                        <div class="Imagem-Categoria">
+                            <img src="../../recursos/categorias/eub-internet.jpg" alt="Produtos Digitais sobre Internet no geral">
+                        </div>
+                        <a href="">Internet</a>
+                    </div>
+                    <div class="Categoria">
+                        <div class="Imagem-Categoria">
+                            <img src="../../recursos/categorias/eub-digital.jpg" alt="Produtos Digitais sobre Empreendedorismo Digitais">
+                        </div>
+                        <a href="">Empreendedorismo Digital</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <a href="#">Entre em Contato</a>
+    </footer>
+</body>
+</html>
