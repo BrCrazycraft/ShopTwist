@@ -56,17 +56,19 @@
             Twist
         </div>
         <input id="menu-toggle" type="checkbox" />
-        <div class="search-bar">
-            <input type="text" id="search" class="search-input" placeholder="Pesquisar">
-            <label for="search" style="color: white;">
-                <input type="button" value="Pesquisar">
-            </label>
-        </div>
         <label class='menu-button-container' for="menu-toggle">
             <div class='menu-button'></div>
         </label>
         <ul class="menu">
-            <li><a href="">Home</a></li>
+            <li>
+                <div class="search-bar">
+                    <input type="text" id="search" class="search-input" placeholder="Pesquisar">
+                    <label for="search" style="color: white;">
+                        <input type="button" value="Pesquisar">
+                    </label>
+                </div>
+            </li>
+            <li><a href="">Destaques</a></li>
             <li><a href="pages/categorias/categorias_base.html">Categorias</a></li>
             <li><a href="pages/afiliados/afiliado.html">Afiliação</a></li>
             <li><a href="pages/sobre_nos/sobrenos.html">Sobre Nós</a></li>
